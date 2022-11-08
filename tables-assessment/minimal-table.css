@@ -33,17 +33,3 @@ tr:nth-child(odd) td {
 caption {
   padding: 10px;
 }
-
-
-
-.bold {
-  font-weight: bold;
-}
-
-.planet-names {
-  font-weight: bold;
-}
-
-.box {
-  border: 10px solid black;
-}
