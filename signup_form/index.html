@@ -7,6 +7,79 @@
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  
+  <div class="container">
+    <div class="sidebar">
+      <img src="halie-west-25xggax4bSA-unsplash.jpg" alt="Fern image" class="sidebar-img">
+      <div class="odin-line-art">
+        <img src="odin-lined.png" alt="Odin line art" id="odin-art">
+        <p id="odin">ODIN</p>
+      </div>
+      <p class="credit">Photo by <a class="credit-a" href="https://unsplash.com/@haliewestphoto">Halie West</a> on <a class="credit-a" href="https://unsplash.com/photos/25xggax4bSA">Unsplash</a></p>
+    </div>
+    <div class="main-content">
+      <div class="instructions-wrapper">
+        <h3 class="instructions">
+          This is not a real online service! You know you need something like this in you life to help you realize your deepest dreams. Sign up <em>now</em> to get started.</h3>
+        <h3>You <em>know</em> you want to.</h3> 
+      </div>
+      <div class="form-wrapper">
+        <h3>Let's do this!</h3> 
+        <br>
+        <form action="index.html" class="form" method="get">
+          <div class="top-form">
+            <div class="input-flex">
+              <label for="fname">FIRST NAME</label>
+              <input type="text" 
+                id="fname" 
+                placeholder="Thor" 
+                pattern="^([A-Za-z,\-\s]{3,20})">
+            </div>
+            <div class="input-flex">
+              <label for="lname">LAST NAME</label>
+              <input type="text" 
+                id="lname" 
+                placeholder="Odinson" 
+                pattern="^([A-Za-z,\-\s]{3,20})">
+            </div>
+          </div>
+          <div class="mid-form">
+            <div class="input-flex">
+              <label for="email">EMAIL</label>
+              <input type="email" 
+              id="email"
+              placeholder="t.odinson@valhalla.com">
+            </div>
+            <div class="input-flex">
+              <label for="phone">PHONE NUMBER</label>
+              <input type="tel" 
+                id="phone"
+                pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+                placeholder="123-555-1234">
+            </div>
+          </div>
+          <div class="bottom-form">
+            <div class="input-flex">  
+              <label for="password">PASSWORD</label>
+              <input type="text" 
+                pattern=".{8,}" 
+                id="password"
+                placeholder="StrongP@55word"
+                class="password">
+              <!-- <p class="password-instructions">Passwords must include at least 8 characters.</p> -->
+              <p class="invalid">* Passwords do not match</p>
+            </div>
+            <div class="input-flex">
+              <label for="confirm-passowrd">CONFIRM PASSWORD</label>
+              <input type="text" id="confirm-password" pattern=".{8,}" placeholder="StrongP@55word">
+            </div>  
+          </div>
+      </div>
+      <div class="submit-form">
+        <button>Create Account</button>
+      </form>
+      </div>
+      <div class="already"><p>Already have an account? <a href="index.html">Log in</a></p></div>
+    </div>
+  </div>
 </body>
 </html>
